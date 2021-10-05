@@ -1,0 +1,89 @@
+
+
+	 {
+        "English": [
+        {"title":    "A visual introduction to talend's <span id='num_components'></span> components"},
+        {"scroll":   "Scroll"},
+		{"searchPlaceholder": "Find component"},
+		{"searchButton": "Submit"}
+		],
+		"Français":[
+        {"title":    "Une introduction visuelle aux <span id='num_components'></span> composants de talend"},
+		{"scroll":   "Faire défiler"},
+		{"searchPlaceholder": "Rechercher un composant"},
+		{"searchButton": "Soumettre"}
+		],
+		"Deutsch": [
+		{"title":	"Eine visuelle Einführung in die <span id='num_components'></span> Komponenten von talend"},
+		{"scroll":  "Scrollen"},
+		{"searchPlaceholder": "Komponente suchen"},
+		{"searchButton": "Senden"}
+		],
+		"Português":[
+        {"title":    "Uma introdução visual aos <span id='num_components'></span> componentes do talend"},
+		{"scroll":   "Rolagem"},
+		{"searchPlaceholder": "Encontrar componente"},
+		{"searchButton": "Enviar"}
+		],
+        "中文":		[
+        {"title":    "塔倫德<span id ='num_components'></span>組件的視覺介紹"},
+		{"scroll":	 "滾動"},
+		{"searchPlaceholder": "查找組件"},
+		{"searchButton": "提交"}
+		],
+		"русский":	[
+		{"title":  	"Визуальное введение в <span id='num_components'></span> компонентов talend"},
+		{"scroll":	"Прокрутка"},
+		{"searchPlaceholder": "найти компонент"},
+		{"searchButton": "представить"}
+		],
+		"Español":	[
+		{"title":	"Una introducción visual a los componentes <span id='num_components'></span> de talend"},
+		{"scroll":	"Desplazarse"},
+		{"searchPlaceholder": "Encontrar componente"},
+		{"searchButton": "Enviar"}
+		],
+		"Türk":	[
+		{"title":  	"Talend'in <span id='num_components'></span> bileşenine görsel bir giriş"},
+		{"scroll": 	"Kaydırma"},
+		{"searchPlaceholder": "Bileşeni bul"},
+		{"searchButton": "Sunmak"}
+		],
+		"Italiano":	[
+		{"title":	"Un'introduzione visiva ai componenti <span id='num_components'></span> di talend"},
+		{"scroll": 	"Scorrere"},
+		{"searchPlaceholder": "Trova componente"},
+		{"searchButton": "Invia"}
+		],
+		"Bahasa Indonesia":	[
+		{"title":	"Pengenalan visual untuk <span id='num_components'></span> komponen talend"},
+		{"scroll": 	"Gulir"},
+		{"searchPlaceholder": "Temukan komponen"},
+		{"searchButton": "Kirimkan"}
+		],
+		"لعربية": 	[
+		{"title":  	"مقدمة البصرية لمكونات talend في <span id='num_components'></span>"},
+		{"scroll":  "انتقل"},
+		{"searchPlaceholder": "ابحث عن المكون"},
+		{"searchButton": "المزيد"}
+		],
+		"简体": 	[
+		{"title": 	"塔伦德<span id='num_components'></span>组件的视觉介绍"},
+		{"scroll":  "滚动"},
+		{"searchPlaceholder": "查找组件"},
+		{"searchButton": "提交"}
+		],
+		"ελληνικά":	[
+		{"title":	"Μια οπτική εισαγωγή στα <span id='num_components'></span> στοιχεία του ταλέντου"},
+		{"scroll":  "Πάπυρος"},
+		{"searchPlaceholder": "Εύρεση στοιχείου"},
+		{"searchButton": "υποβάλλουν"}
+		],
+		"日本人":	[
+		{"title": "talendの<span id='num_components'></span>コンポーネントの視覚的な紹介"},
+		{"scroll": "スクロール"},
+		{"searchPlaceholder": "コンポーネントを探す"},
+		{"searchButton": "送信する"}
+		]
+	}
+

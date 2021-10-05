@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--                                  
+╭━━╮╱╱╱╱╭╮╱╱╱╱╱╭╮╱╭╮╱╱╱╱╱╭╮            ━╮ ╭━
+╰┫┣╯╱╱╱╱┃┃╱╱╱╱╭╯╰╮┃┃╱╱╱╱╱┃┃             | |
+╱┃┃╭━╮╭━╯┣━━┳━┻╮╭╯┃┃╱╱╭━━┫╰━┳━━╮       ╱   \
+╱┃┃┃╭╮┫╭╮┃┃━┫━━┫┃╱┃┃╱╭┫╭╮┃╭╮┃━━┫      ╱_____\
+╭┫┣┫┃┃┃╰╯┃┃━╋━━┃╰╮┃╰━╯┃╭╮┃╰╯┣━━┃     ╱       \  
+╰━━┻╯╰┻━━┻━━┻━━┻━╯╰━━━┻╯╰┻━━┻━━╯    (_________)  
+
+This science experiment provides a gentle visual introduction to 
+the many, many components that constitute the Talend Data Fabric.
+
+Recommend viewing in Visual Source Code.
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>A visual introduction to talend's 1000+ of components</title>
+  <meta name="description"
+    content="A graphical depiction of the thousand components available in Talend's Data Fabric offering, rendered in the form of a tree graph">
+ 
+<!-- Talend favicon -->
+<link rel="icon" href="img/favicon-logo-square.ico" type="image/x-icon">
+ <!-- Bootstrap styling -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- Custom styling -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+
+</head>
+  <body>
+    <!-- sure are lot of divs for such a simple layout! -->
+    <div class="container" id="container">
+      <nav class="navbar me-auto justify-content-between">
+        <div class="container-fluid search-wrapper ">
+          <!-- me-auto aligns form to the right margin in version 5 -->
+          <form autocomplete="off" action="javascript:goToComponent(document.getElementById('searchInput').value)">
+            <div class="autocomplete me-auto">
+              <input id="searchInput" type="text" size="30" placeholder="Find component">
+            </div>
+            <input id="searchButton" class="search-button" type="submit" value="Submit">
+          </form>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-md-4 title-wrapper">
+          <div id="title-area"></div>
+            <p class="language-options">
+              <img style="height:1.2em;filter:contrast(1%);"
+                title="Data web-scraped from https://talendforge.org/components/index.php. Make sure to select the 'Talend Data Fabric' filter from the drop-down menu." alt="language:" src="img/world.png" />:
+              <select id="translation-selector"></select>
+            </p>
+          <div id="keep-scrolling" class="scroll-wrapper" style="top: 647px">
+            <div id="animated-arrow" class="bounce-animation">
+              <p id="scroll">Scroll</p>
+              <svg width="40" height="10">
+                <path d="M0,0L40,0L20,10Z" fill="#000" stroke="none" />
+              </svg>
+            </div>
+          </div> <!-- end of keep-scrolling -->
+          <!-- <form>
+            <label><input type="radio" name="mode" value="cluster" checked> Dendrogram</label>
+            <label><input type="radio" name="mode" value="tree"> Tree</label>
+          </form> -->
+        </div>
+        <div class="col-md-8 chaos" id="chaos">
+          <img style="top: 160px;filter:blur(2px);" src="img/chaos.png"/>
+        </div>
+
+        <div id="componentTree" class="col-xl-12 componentTree"></div>
+      </div> <!-- end of first row -->
+    </div>
+
+      <div id="resolution-disclaimer">
+        <div id="disclaimer-wrapper">
+          <p>
+            Oops, we designed this site for desktop rather than mobile viewing. 
+            Please come back on a desktop or view on a screen at least 1024 by 768 pixels in size.
+          </p>
+          <p>
+            Thanks and enjoy the show!
+          </p>
+        </div>
+      </div>
+
+<div id="labs">Indest Labs <span id="currentScrollTop"></span> <img style="height:1.2em;filter:contrast(75%);" src="img/flask.svg" /> 
+</div>
+
+	<!-- External JS libraries (note: use https://www.srihash.org/ )-->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+	<script src="js/searchBar.js"></script>
+  <script src="js/titleObject.js"></script>
+    <!-- <script src="js/componentTree.js"></script> -->
+	<script src="js/index.js"></script>
+</body>
+
+</html>
